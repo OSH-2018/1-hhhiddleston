@@ -96,7 +96,7 @@ gdb ./vmlinux	#加载符号表，建立gdb与gdb server的连接
 
 ### 关键事件分析
 
-在`start_kernel` , `set_task_stack_end_magic`, `mm_init`, `setup_arch`, `boot_cpu_init`, `rest_init`处设置断点，使用list, n, b, info 等指令进行跟踪调试。具体操作可见我的录屏视频。
+在`start_kernel` , `set_task_stack_end_magic`, `mm_init`, `setup_arch`, `boot_cpu_init`, `rest_init`处设置断点，使用list, n, b, info 等指令进行跟踪调试。具体操作可见我的[录屏视频](https://github.com/OSH-2018/1-hhhiddleston/blob/master/pics/demo.mp4)。
 
 第一次continue时可以看到qemu停在了内核引导的位置：
 
